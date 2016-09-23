@@ -1,0 +1,59 @@
+---
+---
+
+$deg: 1deg
+$time: 7s
+
+html
+	background: url(/images/bg.jpg) no-repeat center center fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+body
+	color: black
+	text-align: center
+	font-size: 2em
+	margin: 0
+	padding: 0
+	font-family: 'Roboto', sans-serif
+	background-color: transparent
+	a
+		color: #8f5d38
+		&:hover
+			text-decoration: none
+		&:active
+			opacity: 0.5
+	main
+		background-color: rgba(255,255,255,0.7)
+		padding: 1em
+		img
+			-webkit-animation-name: rotate
+			-webkit-animation-duration: $time
+			-webkit-animation-iteration-count: infinite
+			-webkit-transform-origin: 50% 50%
+			-webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+	header,
+	footer
+		color: #f7f7f7
+		padding: 1em
+	h1
+		font-family: 'Jolly Lodger', cursive
+		font-size: 5em
+		font-weight: 100
+		margin: 0
+	ul li
+		list-style: none
+		font-weight: 100
+
+
+@keyframes rotate
+	0%
+		-webkit-transform: rotate(0deg)
+	25%
+		-webkit-transform: rotate($deg)
+	75%
+		-webkit-transform: rotate(-$deg)
+	100%
+		-webkit-transform: rotate(0deg)
