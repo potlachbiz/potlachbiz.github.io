@@ -8,6 +8,6 @@ layout: default
 - RIVISTE CONTROCULTURA '60/'80/ FUMETTI
 - GRAFICHE D'AUTORE E RARITA' BIBLIOGRAFICHE
 
-![OROBORO](images/OROBORO.png "OROBORO")
+![OROBORO](/images/OROBORO.png "OROBORO")
 
 #### VIA ANTONIO TEMPESTA 61, 00176 – ROMA<br>[potlach@potlach.biz](mailto:potlach@potlach.biz)
