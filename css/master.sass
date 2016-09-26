@@ -5,20 +5,20 @@ $deg: 1deg
 $time: 17s
 
 html
-	background: url(/images/BRONZO.jpg) no-repeat center center fixed
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-o-background-size: cover
-	background-size: cover
+	// background: url(/images/bronzo.jpg) no-repeat center center fixed
+	// -webkit-background-size: cover
+	// -moz-background-size: cover
+	// -o-background-size: cover
+	// background-size: cover
 
 body
-	color: #f7f7f7
+	color: #020202
+	background-color: #a15d30
 	text-align: center
 	font-size: 2em
 	margin: 0
 	padding: 0
 	font-family: 'Roboto', sans-serif
-	background-color: transparent
 	a
 		color: #020202
 		&:hover
@@ -29,23 +29,24 @@ body
 		// background-color: rgba(255,255,255,0.7)
 		padding: 1em
 		img
-			-webkit-animation-name: rotate
-			-webkit-animation-duration: $time
-			-webkit-animation-iteration-count: infinite
-			-webkit-transform-origin: 50% 50%
-			-webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
+			// -webkit-animation-name: rotate
+			// -webkit-animation-duration: $time
+			// -webkit-animation-iteration-count: infinite
+			// -webkit-transform-origin: 50% 50%
+			// -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
 	header,
 	footer
 		// color: #f7f7f7
 		padding: 1em
 	h1
 		font-size: 5em
-		font-weight: 100
+		font-weight: bold
 		margin: 0
+		color: black
 	ul li
 		list-style: none
 		font-weight: 100
-
+		color: #f7f7f7
 
 @keyframes rotate
 	0%
