@@ -9,6 +9,6 @@ layout: default
 - GRAFICHE D'AUTORE E RARITA' BIBLIOGRAFICHE
 - **ACQUISTIAMO LE VOSTRE COLLEZIONI DI DISCHI E LIBRI**
 
-![OROBORO](/images/OroEye.png "OROBORO")
+![OROBORO](/images/oroboro-squame.png "OROBORO")
 
-#### VIA ANTONIO TEMPESTA 61, 00176 – ROMA<br>[potlach@potlach.biz](mailto:potlach@potlach.biz)
+#### VIA ANTONIO TEMPESTA 61, 00176 ROMA<br>[potlach@potlach.biz](mailto:potlach@potlach.biz)

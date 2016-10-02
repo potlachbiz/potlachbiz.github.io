@@ -1,33 +1,35 @@
 ---
 ---
 
+$black: #1b0c0c
 $deg: 1deg
 $time: 17s
 
 html
-	// background: url(/images/bronzo.jpg) no-repeat center center fixed
-	// -webkit-background-size: cover
-	// -moz-background-size: cover
-	// -o-background-size: cover
-	// background-size: cover
+	background: url(/images/grunze-bronze.jpg) no-repeat center center fixed
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
 
 body
-	color: #020202
-	background-color: #a15d30
+	color: #f7f7f7
+	// background-color: #a15d30
 	text-align: center
 	font-size: 2em
 	margin: 0
 	padding: 0
-	font-family: 'Roboto', sans-serif
+	font-family: 'Oswald', sans-serif
 	a
-		color: #020202
+		color: $black
+		text-decoration: none
 		&:hover
-			text-decoration: none
+			text-decoration: underline
 		&:active
 			opacity: 0.5
 	main
 		// background-color: rgba(255,255,255,0.7)
-		padding: 1em
+		padding: 0
 		img
 			// -webkit-animation-name: rotate
 			// -webkit-animation-duration: $time
@@ -38,15 +40,21 @@ body
 	footer
 		// color: #f7f7f7
 		padding: 1em
+	h4
+		font-weight: 100
+		a
+			font-weight: bold
 	h1
 		font-size: 5em
 		font-weight: bold
 		margin: 0
-		color: black
-	ul li
-		list-style: none
-		font-weight: 100
-		color: #f7f7f7
+		color: $black
+	ul
+		margin-top: 0
+		li
+			list-style: none
+			font-weight: 100
+			color: #f7f7f7
 
 @keyframes rotate
 	0%
