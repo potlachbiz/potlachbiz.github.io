@@ -5,13 +5,17 @@ $black: #1b0c0c
 $bg: #9b622d
 $deg: 1deg
 $time: 17s
+$bg-image: '/images/grunze-bronze.jpg'
 
-html
-	background: $bg url(/images/grunze-bronze.jpg) no-repeat center center fixed
+@mixin cover-size
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
 	background-size: cover
+
+html
+	background: $bg url($bg-image) no-repeat center center fixed
+	@include cover-size
 
 body
 	color: #f7f7f7
@@ -21,6 +25,13 @@ body
 	margin: 0
 	padding: 0
 	font-family: 'Oswald', sans-serif
+	nav
+		background: $bg url($bg-image) no-repeat center center fixed
+		background-blend-mode: color-dodge
+		@include cover-size
+		padding: 0.3em 0
+		a
+			padding: 0 2em
 	a
 		color: $black
 		text-decoration: none
