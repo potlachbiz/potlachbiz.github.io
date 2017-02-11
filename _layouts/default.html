@@ -8,23 +8,13 @@
 			@import 'https://fonts.googleapis.com/css?family=Oswald:400,700,300';
 		</style>
 		<link rel="stylesheet" href="/css/master.css">
+		<script src="/javascripts/potlach.js" defer></script>
 	</head>
-	<body>
-		<nav>
-			<a href="http://www.jackdaniels.com/" title="Jack Daniel's Tennessee Whiskey"><img src="/images/sponsors/jack.png" height="66" alt="Jack Daniels"></a>
-			<a href="http://www.eastpak.com/" title="Eastpak"><img src="/images/sponsors/eastpak.png" height="66" alt="Eastpak"></a>
-			<a href="http://viniaurora.it/" title="VINI AURORA"><img src="/images/sponsors/aurora.png" height="66" alt="VINI AURORA"></a>
-		</nav>
-		<header>
-			<h1>POTLACH</h1>
-		</header>
+	<body class="{{ page.name | slugify }}">
+{% include header.html %}
 		<main>
 			{{ content }}
 		</main>
-		<footer>
-			<blockquote>
-			<p>CONTATTI: 349/8342300 (PIERPAOLO DE IULIS) – 338/2260228 (MAURIZIO NERI)</p>
-			</blockquote>
-		</footer>
+{% include footer.html %}
 	</body>
 </html>
