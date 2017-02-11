@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 
 - LIBRI SAGGISTICA/ARTE/NARRATIVA/POESIA
@@ -10,5 +9,3 @@ layout: default
 - **ACQUISTIAMO LE VOSTRE COLLEZIONI DI DISCHI E LIBRI**
 
 ![OROBORO](/images/oroboro-squame.png "OROBORO")
-
-#### VIA ANTONIO TEMPESTA 61, 00176 ROMA<br>[potlach@potlach.biz](mailto:potlach@potlach.biz)

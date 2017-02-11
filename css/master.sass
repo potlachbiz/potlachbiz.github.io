@@ -16,6 +16,13 @@ $bg-image: '/images/grunze-bronze.jpg'
 html
 	background: $bg url($bg-image) no-repeat center center fixed
 	@include cover-size
+	overflow-y: scroll
+
+.black
+	color: $black
+
+.strong
+	font-weight: bold
 
 body
 	color: #f7f7f7
@@ -25,6 +32,9 @@ body
 	margin: 0
 	padding: 0
 	font-family: 'Oswald', sans-serif
+	&:not(.index-md)
+		& > header > h1
+			cursor: pointer
 	nav
 		background: $bg url($bg-image) no-repeat center center fixed
 		background-blend-mode: color-dodge
