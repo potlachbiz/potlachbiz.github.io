@@ -1,6 +1,7 @@
 title: POTLACH
 gems:
   - jekyll-coffeescript
+  - jekyll-github-metadata
 defaults:
   -
     scope:
