@@ -38,7 +38,7 @@ fill = (src) ->
 render = (p) ->
 	article = document.createElement 'article'
 	categories = Object.keys(p.terms.category).map (c) ->
-		"<a href='/category##{c}'>#{c}</a>"
+		"<a href='/category/##{c}'>#{c}</a>"
 	catList = categories.join ', '
 	if Object.keys(p.tags)[0]
 		price = "#{separator}PREZZO € " + Object.keys(p.tags)[0]
@@ -68,7 +68,7 @@ renderSingle = (p) ->
 	else
 		article.querySelector('p.contacts').removeAttribute 'hidden'
 	categories = Object.keys(p.terms.category).map (c) ->
-		"<a href='/category##{c}'>#{c}</a>"
+		"<a href='/category/##{c}'>#{c}</a>"
 	catList = categories.join ', '
 	if Object.keys(p.tags)[0]
 		price = "#{separator}PREZZO € <span class='price'>" + Object.keys(p.tags)[0] + "</span>"
