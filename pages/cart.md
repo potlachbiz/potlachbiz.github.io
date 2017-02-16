@@ -1,5 +1,5 @@
 ---
-permalink: /cart
+permalink: cart/
 ---
 
 ## CARRELLO

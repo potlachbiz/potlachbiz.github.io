@@ -1,4 +1,5 @@
 ---
+permalink: /
 ---
 
 - LIBRI SAGGISTICA/ARTE/NARRATIVA/POESIA
