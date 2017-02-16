@@ -6,15 +6,24 @@ $bg: #9b622d
 $deg: 1deg
 $time: 17s
 $bg-image: '/images/grunze-bronze.jpg'
+$borders: 2px solid black
 
 @mixin cover-size
+	background: $bg url($bg-image) no-repeat center center fixed
 	-webkit-background-size: cover
 	-moz-background-size: cover
 	-o-background-size: cover
 	background-size: cover
 
+@mixin clearfix()
+	&:before,
+	&:after
+		content: ""
+		display: table
+	&:after
+		clear: both
+
 html
-	background: $bg url($bg-image) no-repeat center center fixed
 	@include cover-size
 	overflow-y: scroll
 
@@ -32,11 +41,9 @@ body
 	margin: 0
 	padding: 0
 	font-family: 'Oswald', sans-serif
-	&:not(.index-md)
-		& > header > h1
-			cursor: pointer
-	nav
-		background: $bg url($bg-image) no-repeat center center fixed
+	&.cart-md article
+		text-align: center
+	nav.sponsors
 		background-blend-mode: color-dodge
 		@include cover-size
 		padding: 0.3em 0
@@ -50,22 +57,28 @@ body
 		&:active
 			opacity: 0.5
 	main
-		// background-color: rgba(255,255,255,0.7)
+		margin: 2em 0
 		padding: 0
+		min-height: 20em
 		img
 			// -webkit-animation-name: rotate
 			// -webkit-animation-duration: $time
 			// -webkit-animation-iteration-count: infinite
 			// -webkit-transform-origin: 50% 50%
 			// -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000)
-	header,
+	header
+		border-bottom: $borders
+		nav
+			padding-bottom: 0.5em
+			a
+				padding: 0 1em
 	footer
-		// color: #f7f7f7
-		padding: 1em
-	h4
-		font-weight: 100
-		a
-			font-weight: bold
+		border-top: $borders
+		h4
+			margin: 0
+			padding: 1em
+	h4 a
+		font-weight: bold
 	h1
 		font-size: 5em
 		font-weight: bold
@@ -73,10 +86,32 @@ body
 		color: $black
 	ul
 		margin-top: 0
+		padding: 0
 		li
 			list-style: none
 			font-weight: 100
 			color: #f7f7f7
+
+article
+	text-align: left
+	max-width: 40em
+	margin: 0 auto 2em auto
+	font-size: .8em
+	@include clearfix()
+	h2
+		text-transform: uppercase
+		color: $black
+		margin: 0
+	p
+		margin: 0
+		&:not(.meta)
+			font-weight: 100
+			margin-top: 1em
+			font-size: 90%
+	img.thumb
+		float: left
+		width: 200px
+		margin-right: 1em
 
 @keyframes rotate
 	0%
@@ -87,3 +122,5 @@ body
 		-webkit-transform: rotate(-$deg)
 	100%
 		-webkit-transform: rotate(0deg)
+
+@import 'buttons.css'
